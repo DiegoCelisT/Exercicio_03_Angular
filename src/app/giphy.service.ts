@@ -10,7 +10,7 @@ export class GiphyService {
 
   private api_key = 'sTn1PuIHZHQwyTRA7bR2TXGQjja2nV3T';
   
-  private limit = '2';
+  private limit = '24';
 
   getGIFS (pesquisa){
     // console.log (pesquisa)

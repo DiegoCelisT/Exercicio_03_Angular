@@ -1,4 +1,4 @@
-<article id="Busca">
+<article id="Busca" *ngIf="Home == true">
 	<img id="TopBall" src="../assets/giphy.gif">
   <form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
 			<div>
@@ -7,13 +7,17 @@
 			<button type="submit">BUSCAR</button>
   </form>
   <img id="BottomBall" src="../assets/giphy.gif">
+  <h2>Powered by DiegoCelisT</h2>
+  <img id="DCTLogo" src="../assets/Logo DCT Portfolio.png" width="150px">
 </article>
 
-
-<!--
-<article id = "Resultados">
+<article id = "Resultados" *ngIf="Home == false">
+  
+  <button id="buttonHome"  type="button" (click)="limpar ()">
+  Buscar mais!
+  </button>
   <h1>Resultados</h1>    
-  <img *ngFor="let i of resultados.data" [src]="i.images.fixed_width.url" height="200">
-    <!--fixed_width para ter o mesmo tamanho (200) e ter uma melhor apresentação dos resultados
+  <div>
+    <img *ngFor="let i of resultados.data" [src]="i.images.fixed_width.url">
+  </div>    
 </article>
--->
