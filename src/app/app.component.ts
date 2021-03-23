@@ -16,7 +16,7 @@ export class AppComponent {
   onSubmit (BUSCA){
     this.GiphyServ.getGIFS(BUSCA.form.value.palavras_chave)
     .subscribe(resultados => {
-      console.log (resultados);
+      // console.log (resultados);
       this.resultados = resultados;
     })
     

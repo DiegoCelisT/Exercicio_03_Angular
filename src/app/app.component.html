@@ -1,16 +1,19 @@
-<article>
-  <h1>Busca de GIFs</h1>
-	<form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
+<article id="Busca">
+	<img id="TopBall" src="../assets/giphy.gif">
+  <form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
 			<div>
-				<input type="text" name="palavras_chave" required ngModel> 
-				<label>Inserir o que vc procura!</label>
+				<input type="text" name="palavras_chave" required ngModel placeholder="O que você está procurando?"> 
 			</div>
 			<button type="submit">BUSCAR</button>
   </form>
+  <img id="BottomBall" src="../assets/giphy.gif">
 </article>
 
-<article>
+
+<!--
+<article id = "Resultados">
   <h1>Resultados</h1>    
   <img *ngFor="let i of resultados.data" [src]="i.images.fixed_width.url" height="200">
-    <!--fixed_width para ter o mesmo tamanho (200) e ter uma melhor apresentação dos resultados-->
+    <!--fixed_width para ter o mesmo tamanho (200) e ter uma melhor apresentação dos resultados
 </article>
+-->

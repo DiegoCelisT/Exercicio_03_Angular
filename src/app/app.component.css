@@ -1,0 +1,63 @@
+*{
+    color: white;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+}
+
+#Busca{
+    position: relative;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -200px;
+}
+
+input{
+    position: absolute;
+    top:25%;
+    left: 12.5%;
+    width: 400px;
+    height: 50px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgb(255, 0, 179);
+}
+
+input::placeholder{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgb(255, 0, 179);
+}
+
+button{
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    padding: 66px;
+    border-radius: 50%;
+    font-size: 27px;
+    border-color: rgba(255, 0, 179, 0); /*Transparentado provisionalmente, ou não*/
+    border-width: 5px;
+    color: whitesmoke;
+    text-shadow: 0px 5px 4px rgb(116, 0, 0);
+    font-weight: bold;
+    background-image: url("../assets/giphy.gif");
+    background-size: 170px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+button:hover{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+#BottomBall{
+    display: flex;
+    position: relative;
+}
