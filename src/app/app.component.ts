@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GiphyService } from './giphy.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exercicio03';
+
+  resultados: any = {};
+
+  constructor (private GiphyServ: GiphyService) {}
+
+  onSubmit (BUSCA){
+    this.GiphyServ.getGIFS(BUSCA.form.value.palavras_chave)
+    .subscribe(resultados => {
+      console.log (resultados);
+      this.resultados = resultados;
+    })
+    
+  }
+  
 }
