@@ -132,7 +132,12 @@ textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+select:-webkit-autofill:focus,
+select:-webkit-autofill::first-line,
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line,
+:-webkit-autofill::first-line
+{
   border: 1px solid rgba(255, 72, 0, 0);
   -webkit-text-fill-color: rgb(255, 255, 255);
   -webkit-box-shadow: 0 0 0px 1000px rgba(255, 238, 0, 0) inset; /*Fundo do placeholder*/
@@ -140,7 +145,29 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 
-input:-webkit-autofill::first-line{
-    font-size: 7px !important;
-    color: lawngreen;
-  }
+@media (max-width: 780px)
+{
+    h1
+    {
+        padding-top: 30px;
+    }
+
+    #buttonHome{
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        padding: 117px 30px 0px 30px;
+        font-size: 18px;
+        border-color: rgba(255, 0, 179, 0);
+        color: whitesmoke;
+        text-shadow: 0px 5px 3px rgb(116, 0, 87);
+        font-weight: 600;
+        background-size: 200px;
+        position: absolute;
+        top: -120px;
+        right: 10%;   
+    }
+    
+
+
+}
