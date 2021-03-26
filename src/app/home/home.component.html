@@ -1,0 +1,25 @@
+<!-- <article id="Busca">
+	<img id="TopBall" src="../assets/giphy.gif">
+  <form #meuForm="ngForm">
+			<div>
+				<input type="text" name="palavras_chave" required ngModel placeholder="O que você está procurando?"> 
+			</div>
+			<button type="submit"><a [href]=pagina>BUSCAR</a></button>
+  </form>
+  <img id="BottomBall" src="../assets/giphy.gif">
+  <h2>Powered by DiegoCelisT</h2>
+  <img id="DCTLogo" src="../assets/Logo DCT Portfolio.png" width="150px">
+</article> -->
+
+<article id="Busca">
+	<img id="TopBall" src="https://media2.giphy.com/media/3o6vXTpomeZEyxufGU/giphy.gif">
+  <form #meuForm="ngForm" (submit)="pesquisar(termoPesquisa.value, $event)">
+			<div>
+				<input type="text" name="palavras_chave" required ngModel placeholder="O que você está procurando?" #termoPesquisa [value]="pesquisa"> 
+			</div>
+			<button type="submit">BUSCAR</button>
+  </form>
+  <img id="BottomBall" src="https://media2.giphy.com/media/3o6vXTpomeZEyxufGU/giphy.gif">
+  <h2>Powered by DiegoCelisT</h2>
+  <img id="DCTLogo" src="https://diegocelist.github.io/Portfolio-DiegoCelisT/Images/Logo%20DCT%20Portfolio.png" width="150px">
+</article>

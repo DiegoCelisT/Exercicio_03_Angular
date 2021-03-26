@@ -1,0 +1,173 @@
+*{
+    color: white;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    font-family:sans-serif;
+}
+
+#Busca{
+    position: relative;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -200px;
+}
+
+input{
+    position: absolute;
+    top:25%;
+    left: 12.5%;
+    width: 400px;
+    height: 50px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgb(255, 0, 179);
+    font-family:sans-serif;
+}
+
+input::placeholder{
+    font-size: 27px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgb(255, 0, 179);
+}
+
+button{
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    padding: 66px;
+    border-radius: 50%;
+    font-size: 27px;
+    border-color: rgba(255, 0, 179, 0); /*Transparentado provisionalmente, ou não*/
+    border-width: 5px;
+    color: whitesmoke;
+    text-shadow: 0px 5px 4px rgb(116, 0, 0);
+    font-weight: 600;
+    background-image: url("https://media2.giphy.com/media/3o6vXTpomeZEyxufGU/giphy.gif");
+    background-size: 170px;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+button:hover{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+#BottomBall{
+    display: flex;
+    position: relative;
+}
+
+h2{
+    position: absolute;
+    top: 66%;
+    left: 25%;
+    background-color: rgba(255, 99, 71, 0);
+    text-shadow: 0px 4px 4px rgb(255, 0, 179);
+}
+
+#DCTLogo{
+    position: absolute;
+    top: 82%;
+    left: 36%;
+    background-color: rgba(255, 99, 71, 0);
+}
+
+
+#Resultados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 27px;
+    text-shadow: 0px 4px 4px rgb(102, 3, 194);
+    font-weight: bold;
+}
+
+#Resultados div{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Resultados div img{
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+
+#buttonHome{
+    height: 300px;
+    width: 300px;
+    padding-top: 180px;
+    font-size: 27px;
+    border-color: rgba(255, 0, 179, 0);
+    color: whitesmoke;
+    text-shadow: 0px 5px 4px rgb(116, 0, 0);
+    font-weight: 600;
+    background-size: 300px;
+    position: absolute;
+    top: -170px;
+    right: 10px;   
+}
+
+#buttonHome:hover{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+/*psudoclasses para quando a gente usa o autocomplete ou sugestões de preenchimento de formulários!*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill::first-line,
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line,
+:-webkit-autofill::first-line
+{
+  border: 1px solid rgba(255, 72, 0, 0);
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 238, 0, 0) inset; /*Fundo do placeholder*/
+  transition: background-color 5000s ease-in-out 0s;
+  text-align: center;
+}
+
+@media (max-width: 780px)
+{
+    h1
+    {
+        padding-top: 30px;
+    }
+
+    #buttonHome{
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        padding: 117px 30px 0px 30px;
+        font-size: 18px;
+        border-color: rgba(255, 0, 179, 0);
+        color: whitesmoke;
+        text-shadow: 0px 5px 3px rgb(116, 0, 87);
+        font-weight: 600;
+        background-size: 200px;
+        position: absolute;
+        top: -120px;
+        right: 10%;   
+    }
+    
+
+
+}

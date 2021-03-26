@@ -1,0 +1,10 @@
+<article id = "Resultados">
+
+    <!--href="" botão de Home-->
+    <a href=""><button id="buttonHome"  type="button">
+    Voltar por mais!</button></a>
+    <h1>Resultados</h1>    
+    <div>
+      <img *ngFor="let i of resultados_gomelos.data" [src]="i.images.fixed_width.url">
+    </div>    
+  </article>

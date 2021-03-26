@@ -1,4 +1,4 @@
-<article id="Busca" *ngIf="Home == true">
+<!-- <article id="Busca" *ngIf="Home == true">
 	<img id="TopBall" src="../assets/giphy.gif">
   <form #meuForm="ngForm" (ngSubmit)="onSubmit(meuForm)">
 			<div>
@@ -9,9 +9,11 @@
   <img id="BottomBall" src="../assets/giphy.gif">
   <h2>Powered by DiegoCelisT</h2>
   <img id="DCTLogo" src="../assets/Logo DCT Portfolio.png" width="150px">
-</article>
+</article> -->
 
-<article id = "Resultados" *ngIf="Home == false">
+<router-outlet></router-outlet>
+
+<!-- <article id = "Resultados" *ngIf="Home == false">
   
   <button id="buttonHome"  type="button" (click)="limpar ()">
   Voltar por mais!
@@ -20,4 +22,4 @@
   <div>
     <img *ngFor="let i of resultados.data" [src]="i.images.fixed_width.url">
   </div>    
-</article>
+</article> -->

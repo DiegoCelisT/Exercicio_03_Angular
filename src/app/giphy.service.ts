@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GiphyService {
 
+  resultados: any =[];
+
   constructor(private httpzao: HttpClient) { }
 
   private api_key = 'sTn1PuIHZHQwyTRA7bR2TXGQjja2nV3T';
@@ -16,7 +18,10 @@ export class GiphyService {
     // console.log (pesquisa)
     
     return this.httpzao.get ('https://api.giphy.com/v1/gifs/search?api_key='+this.api_key+'&q='+pesquisa+'&limit='+this.limit+'&offset=0&rating=g&lang=pt');   
-
   }
+
+  
+
+
 
 }

@@ -19,13 +19,11 @@ export class AppComponent {
     .subscribe(resultados => {
       // console.log (resultados);
       this.resultados = resultados;
-      this.Home = false;
     })
   }
   
   limpar (){
     this.resultados = [];
-    this.Home = true;
   }
 
 
