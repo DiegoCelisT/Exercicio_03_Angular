@@ -16,7 +16,7 @@ const APP_ROUTES: Routes = [
 ];
 
 //Para exportar devemos usar uma constante com o tipo "ModuleWithProviders"...ou seja Módulo com proveedores (vai proveer um mecânismo de rotas) SE LIGA!!!...devo dar um tipo no <any> no ModuleWithProviders.
-export const routing: ModuleWithProviders <any> = RouterModule.forRoot (APP_ROUTES);
+export const routing: ModuleWithProviders <any> = RouterModule.forRoot (APP_ROUTES, { useHash: true });
 
 
 
